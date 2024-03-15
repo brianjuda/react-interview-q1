@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+body {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  max-width: 90%;
+  margin: 5rem auto 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nameInput,
+.location {
+  padding-bottom: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nameInput label,
+.location label {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.nameInput input,
+.location select {
+  max-width: 80%;
+  width: 100%;
+  margin-left: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nameErrorMessage {
+  margin-left: 20%;
+  font-weight: 600;
+  color: red;
+}
+
+.formCTAs {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.formCTAs button {
+  background-color: #fff;
+  border: 2px solid black;
+  font-weight: 600;
+  box-shadow: 4px 2px black;
+}
+
+.formCTAs button:first-child {
+  margin-right: 1.5rem;
+}
+
+.dataTable {
+  display: table;
+  width: 100%;
+}
+
+.dataTable table {
+  width: 100%;
+  border: 3px solid black;
+  border-spacing: 0;
+}
+
+.dataTable caption {
+  display: none;
+}
+
+.dataTable th {
+  background-color: gray;
+}
+
+.dataTable tr {
+  height: 2rem;
+}
+
+.dataTable tr:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+.dataTable th:first-child,
+.dataTable td:first-child {
+  border-right: 2px solid black;
+}
+
+.dataTable td {
+  border-spacing: 0;
 }
